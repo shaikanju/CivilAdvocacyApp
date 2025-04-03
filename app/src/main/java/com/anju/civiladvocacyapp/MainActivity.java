@@ -208,7 +208,7 @@ public class MainActivity extends AppCompatActivity {
     // Method to make the API call with the ZIP code
     private void makeApiCallWithZipCode(String zipCode) {
         // Implement your API call logic with the ZIP code here
-        String apiKey = "AIzaSyBnHiw04IWz3u9PCfq5n_d6H3jtVe9OIh4"; // Replace with your actual API key
+        String apiKey = "YOUR_API_KEY_HERE"; // Replace with your actual API key
         String requestUrl = "https://www.googleapis.com/civicinfo/v2/representatives?key=" + apiKey + "&address=" + zipCode;
         makeApiCall(requestUrl);
     }
@@ -217,7 +217,7 @@ public class MainActivity extends AppCompatActivity {
     private void makeApiCallWithCityState(String cityState) {
         // Implement your API call logic with the city/state name here
         String cityName = extractCityFromInput(cityState);
-        String apiKey = "AIzaSyBnHiw04IWz3u9PCfq5n_d6H3jtVe9OIh4"; // Replace with your actual API key
+        String apiKey = "YOUR_API_KEY_HERE"; // Replace with your actual API key
         String requestUrl = "https://www.googleapis.com/civicinfo/v2/representatives?key=" + apiKey + "&address=" + cityName;
         makeApiCall(requestUrl);
     }
